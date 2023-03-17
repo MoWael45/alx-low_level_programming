@@ -3,6 +3,14 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Description: A c program that check the number if it positive or negative
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 	int n;
