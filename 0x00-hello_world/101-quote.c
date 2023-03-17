@@ -12,8 +12,7 @@ int main(void)
 {
 	ssize_t len;
 	int fd;
-	const char *str = "and that piece of art is useful\" - "
-		"Dora Korpar, 2015-10-19\n";
+	const char *str = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
 	len = sizeof(*str);
 	fd = open("/dev/stderr", O_WRONLY);
@@ -22,4 +21,3 @@ int main(void)
 
 	return (1);
 }
-
