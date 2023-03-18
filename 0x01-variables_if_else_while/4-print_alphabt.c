@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
@@ -9,15 +7,16 @@
  */
 int main(void)
 {
-char c;
+char letter = 'a';
 
-for (c = 'a'; c <= 'z'; ++c)
+while (letter <= 'z')
 {
-if (letter != 'q' && letter != 'e')
-{
-putchar(c);
+if (letter != 'e' && letter != 'q')
+putchar(letter);
+letter++;
 }
-}
+
 putchar('\n');
+
 return (0);
 }
