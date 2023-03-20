@@ -7,27 +7,34 @@
  */
 int main(void)
 {
-int i, j, k, count;
+int i, j, k, l;
 
-count = 0;
 for (i = 0; i <= 9; i++)
 {
-for (j = i + 1; j <= 9; j++)
+for (j = 0 ; j <= 9; j++)
 {
-for (k = j + 1; k <= 9; k++)
+if (i > j)
 {
-if (count > 0)
+k = i / 10;
+l = i % 10;
+putchar(k + '0');
+putchar(l + '0');
+putchar(' ');
+k = j / 10;
+l = j % 10;
+putchar(k + '0');
+putchar(l + '0');
+if (i == 98 && j == 99)
+{
+putchar('\n');
+}
+else
 {
 putchar(',');
 putchar(' ');
 }
-putchar(i + '0');
-putchar(j + '0');
-putchar(k + '0');
-count++;
 }
 }
 }
-putchar('\n');
 return (0);
 }
