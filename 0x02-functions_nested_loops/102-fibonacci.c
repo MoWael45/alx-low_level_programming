@@ -10,7 +10,7 @@ int main(void)
 	unsigned long fib1 = 1, fib2 = 2, fib3, count = 2;
 
 	printf("%lu, %lu, ", fib1, fib2);
-	while (count < 50)
+	while (count < 49)
 	{
 		fib3 = fib1 + fib2;
 		printf("%lu, ", fib3);
