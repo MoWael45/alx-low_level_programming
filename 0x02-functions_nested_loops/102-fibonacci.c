@@ -7,18 +7,18 @@
 
 int main(void)
 {
-	unsigned long long fib1 = 1, fib2 = 2, fib3, count = 2;
+	unsigned long fib1 = 1, fib2 = 2, fib3, count = 2;
 
-	printf("%llu, %llu, ", fib1, fib2);
+	printf("%lu, %lu, ", fib1, fib2);
 	while (count < 50)
 	{
 		fib3 = fib1 + fib2;
-		printf("%llu, ", fib3);
+		printf("%lu, ", fib3);
 		fib1 = fib2;
 		fib2 = fib3;
 		count++;
 	}
 	fib3 = fib1 + fib2;
-	printf("%llu\n", fib3);
+	printf("%lu\n", fib3);
 	return (0);
 }
