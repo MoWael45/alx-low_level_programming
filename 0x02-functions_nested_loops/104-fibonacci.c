@@ -7,20 +7,20 @@
  */
 int main(void)
 {
-	int fib1 = 1, fib2 = 2, count = 2;
+	int fib1 = 1, fib2 = 2, fib3;
 
 	printf("%d, %d, ", fib1, fib2);
-	while (count < 98)
+	for (int i = 3; i <= 98; i++)
 	{
-		int fib3 = fib1 + fib2;
-
+		fib3 = fib1 + fib2;
 		printf("%d, ", fib3);
+		if (i != 98)
+		{
+			printf(", ");
+		}
 		fib1 = fib2;
 		fib2 = fib3;
-		count++;
 	}
-	int fib3 = fib1 + fib2;
-
-	printf("%d\n", fib3);
+	printf("\n");
 	return (0);
 }
