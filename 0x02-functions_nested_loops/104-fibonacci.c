@@ -7,19 +7,19 @@
  */
 int main(void)
 {
-	int fib1 = 1, fib2 = 2, fib3, i;
+	int a = 1, b = 2, c, i;
 
-	printf("%d, %d, ", fib1, fib2);
+	printf("%d, %d, ", a, b);
 	for (i = 3; i <= 98; i++)
 	{
-		fib3 = fib1 + fib2;
-		printf("%d, ", fib3);
-		if (i != 98)
+		c = a + b;
+		a = b;
+		b = c;
+		printf("%d, ", c);
+		if (i < 98)
 		{
 			printf(", ");
 		}
-		fib1 = fib2;
-		fib2 = fib3;
 	}
 	printf("\n");
 	return (0);
