@@ -7,7 +7,7 @@
  * Return: zero
  */
 
-int main (void)
+int main(void)
 {
 int sum;
 char c;
@@ -20,5 +20,5 @@ sum += c;
 putchar(c);
 }
 putchar(2772 - sum);
-return(0);
+return (0);
 }
