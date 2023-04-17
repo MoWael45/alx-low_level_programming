@@ -2,13 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 /**
  * _isNum - check if is a number
  * @num: string to check
  * Return: 1 is numm, 0 not num
  */
-
 int _isNum(char *num)
 {
 	int i;
@@ -28,7 +26,6 @@ int _isNum(char *num)
  * @n: number of bytes
  * Return: s (string modify)
  */
-
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
@@ -43,7 +40,6 @@ char *_memset(char *s, char b, unsigned int n)
  * @s: poiter of character
  * Return: the length of a string
  */
-
 int _strlen(char *s)
 {
 	int len;
@@ -60,7 +56,6 @@ int _strlen(char *s)
  * @argv: number to multiply
  * Return: 0 (success)
  */
-
 int main(int argc, char *argv[])
 {
 	int length, c, prod, i, j, l1, l2;
