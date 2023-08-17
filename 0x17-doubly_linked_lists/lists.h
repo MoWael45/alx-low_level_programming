@@ -1,6 +1,3 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
-
 #ifndef LISTS_H
 #define LISTS_H
 
